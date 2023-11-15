@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site de Eventos">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="Soleil Alves">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Talk Event</title>
 
@@ -15,18 +18,23 @@
     <div class="menu">
         <nav class="header-menu">
             <div class="logo">
-            <img class="headerIm" src="Imagens/logoIcon.png" alt="logo" width=50 height=40>
+            <img class="headerIm" src="Imagens/logoIcon.png" alt="logo" width=50px height=40px>
             <p>Game Talk Event</p>
             </div>
-            <ul>
-                <li><a href="index.html" target="self">Home</a></li>
-                <li><a href="ConvidadosEvent.html" target="self">Convidados</a></li>
-                <li><a href="AboutUs.html" target="self">Sobre nós</a>
-                <li><a href="ContactUs.html" target="self">Contato</a></li>
-            </ul>
+            <div class="dropmenu">
+            <button class="dropbtn">Páginas &#10515;</button>
+            <div class="dropcontent">
+                <a href="index.html" target="_self">Homepage</a>
+                <a href="ConvidadosEvent.html" target="_self">Convidados</a>
+                <a href="AboutUs.html" target="_self">Sobre nós</a>
+                <a href="ContactUs.html" target="_self">Contato</a>
+            </div>
+            </div>
         </nav>
     </div>
+
 </header>
+<section>
 <div id="banner">
         <p class="eventDate">de 10/04 até 14/04</p>
         <h1 class="bannerText">Evento Game Talk</h1>
@@ -39,19 +47,20 @@
     
     <p>Apreciamos vídeo-games em todas suas formas.</p>
 </div>
+</section>
 
-<div class="Row">
+<div class="rows">
     <div class="column">
-        <p class="colText">Jogue jogos clássicos</p>
         <img class="eventIm" src="Imagens/Nin64.jpg" alt="ClassicGame" style="width:90%">
+        <p class="colText">Jogue jogos clássicos</p>
           </div>
         <div class="column">
-        <p class="colText">Aprenda sobre a história dos games</p>
         <img class="eventIm" src="Imagens/gameHis.jpg" alt="GameHistory" style="width:90%">
+        <p class="colText">Aprenda sobre a história dos games</p>
           </div>
         <div class="column">
-        <p class="colText">Palestra de atores que atuaram em filmes de jogos</p>
         <img class="eventIm" src="Imagens/marioMv.jpg" alt="MarioMovie" style="width:90%">
+        <p class="colText">Palestra de atores que atuaram em filmes de jogos</p>
     </div>
 </div>
 
@@ -62,6 +71,7 @@
     <p>Rodovia dos Imigrantes, 1,5 km - Vila Água Funda, São Paulo - SP</p>
 
 <section>
+    
 <div class="containerMap">
     <div class="mapIMG">
         <img src="Imagens/SPexpo1.jpg" alt="SPExpo1">
@@ -73,18 +83,17 @@
 </div>
   
 <div class="Map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8369300240684!2d-46.63184508255615!3d-23.646010299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5adda4c3cb95%3A0x31916ce58f719167!2sS%C3%A3o%20Paulo%20Expo!5e0!3m2!1spt-BR!2sbr!4v1680733689420!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8369300240684!2d-46.63184508255615!3d-23.646010299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5adda4c3cb95%3A0x31916ce58f719167!2sS%C3%A3o%20Paulo%20Expo!5e0!3m2!1spt-BR!2sbr!4v1680733689420!5m2!1spt-BR!2sbr" width="900" height="705" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
+
 </div>
 </section>
-
 <div class="btnCont">
-    <a href="https://www.saopauloexpo.com.br/pt/galeria/?set_order=asc&set_orderby=date">
+    <a href="https://www.saopauloexpo.com.br/pt/galeria/?set_order=asc&set_orderby=date" target="_blank">
     <button type="button" class="btn" >Veja a Galeria da São Paulo Expo</button>
 </a>
 </div>
-</div>
-    
+
 <footer>
     <p> Criado por: Soleil Emilio Alves</p>
 </footer>

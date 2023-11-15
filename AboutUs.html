@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site de Eventos">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="Soleil Alves">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Talk Event</title>
 
@@ -18,12 +21,16 @@
             <img class="headerIm" src="Imagens/logoIcon.png" alt="logo" width=50 height=40>
             <p>Game Talk Event</p>
             </div>
-            <ul>
-                <li><a href="index.html" target="self">Home</a></li>
-                <li><a href="ConvidadosEvent.html" target="self">Convidados</a></li>
-                <li><a href="AboutUs.html" target="self">Sobre nós</a>
-                <li><a href="ContactUs.html" target="self">Contato</a></li>
-            </ul>
+            <div class="dropmenu">
+            <button class="dropbtn">Páginas &#10515;</button>
+            <div class="dropcontent">
+                <a href="index.html" target="_self">Homepage</a>
+                <a href="ConvidadosEvent.html" target="_self">Convidados</a>
+                <a href="AboutUs.html" target="_self">Sobre nós</a>
+                <a href="ContactUs.html" target="_self
+                ">Contato</a>
+            </div>
+            </div>
         </nav>
     </div>
 </header>
@@ -39,7 +46,21 @@
 </div>
 
 <p style="text-align: center;">O jogo Okami é uma das maiores provas que o jogo podem ter visuais e significados artísticos</p>
+<p style="text-align: center; padding: 0;">alguns outros jogos que tem um grande valor artístico:</p>
 </div>
+
+<div class="carouContainer">
+    <button onclick="goToPrev()">&#8656;</button>
+    <div class="carousel">
+        <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000016330/d94d2186ef03c930392253c83c84af0c73b7e57cd902a526b09b4155a25930fe" class="active" alt="Cuphead">
+        <img src="https://cdn-ext.fanatical.com/production/product/1280x720/f987fce8-5459-42a9-8e48-a1a397c4abd0.jpeg" alt="IslandofMemories">
+        <img src="https://cdn-ext.fanatical.com/production/product/1280x720/9254568c-f5c9-4430-a9db-3f70c824700e.jpg" alt="Ori blind forest">
+    </div>
+    <button onclick="goToNext()">&#8658;</button>   
+</div>
+
+<!--Javascript-->
+<script src="script.js"></script>
 
 <footer>
     <p> Criado por: Soleil Emilio Alves</p>

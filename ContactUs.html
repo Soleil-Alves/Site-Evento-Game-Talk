@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site de Eventos">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="Soleil Alves">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Talk Event</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="event.css">
+
+    <!--Javascript-->
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,12 +24,15 @@
             <img class="headerIm" src="Imagens/logoIcon.png" alt="logo" width=50 height=40>
             <p>Game Talk Event</p>
             </div>
-            <ul>
-                <li><a href="index.html" target="self">Home</a></li>
-                <li><a href="ConvidadosEvent.html" target="self">Convidados</a></li>
-                <li><a href="AboutUs.html" target="self">Sobre nós</a>
-                <li><a href="ContactUs.html" target="self">Contato</a></li>
-            </ul>
+            <div class="dropmenu">
+            <button class="dropbtn">Páginas &#10515;</button>
+            <div class="dropcontent">
+                <a href="index.html" target="_self">Homepage</a>
+                <a href="ConvidadosEvent.html" target="_self">Convidados</a>
+                <a href="AboutUs.html" target="_self">Sobre nós</a>
+                <a href="ContactUs.html" target="_self">Contato</a>
+            </div>
+            </div>
         </nav>
     </div>
 </header>
@@ -37,7 +46,7 @@
     <p>Use o formulário a baixo para se cadastrar em nossa plataforma e nos mandar uma mensagem ou até mesmo uma sugestão para nosso evento.</p>
 </div>
 
-<div class="Form">
+<form onSubmit="handleOnSubmit()">
     <div>
         <label for="idemail">E-mail</label>
         <input class="styling" type="email" id="idemail" nome="idemail"/>
@@ -48,18 +57,16 @@
     </div>
     <div>
         <label for="idtextmensagem">Deixe sua mensagem</label>
-        <textarea id="idtexto" rows="5"></textarea>
+        <textarea id="idtexto" rows="5" required></textarea>
     </div>
-    <div></div>
+    <div>
         <label for="idtextsugestao">Deixe uma sugestão</label>
         <textarea id="idtexto" rows="5"></textarea>
+    </div>
     <div>
         <input type="submit" value="Enviar" id="botaoEnviar"/>
     </div>
-</div>
-</div>
-
-
+</form>
 
 </body>
 </html>
